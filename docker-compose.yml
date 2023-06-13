@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  host:
+    container_name: host
+    build:
+      context: .
+      dockerfile: ./apps/host/Dockerfile
+    restart: always
+    ports:
+      - 3000:3000
+
+  products:
+    container_name: products
+    build:
+      context: .
+      dockerfile: ./apps/products/Dockerfile
+    restart: always
+    ports:
+      - 3001:3000

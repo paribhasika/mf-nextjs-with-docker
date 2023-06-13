@@ -1,0 +1,12 @@
+.git
+*Dockerfile*
+*docker-compose*
+*node_modules*
+npm-debug.log
+.vscode
+.dockerignore
+.git
+.gitignore
+.husk
+/apps/host/**
+/storybook/**

@@ -1,0 +1,56 @@
+{
+  "name": "e-comm",
+  "description": "",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "configs/*",
+    "packages/*",
+    "plugins/*"
+  ],
+  "scripts": {
+    "start": "turbo run start",
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "graph": "turbo run build --graph",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo run clean && rimraf node_modules",
+    "prepare": "husky install",
+    "format": "prettier --write \"**/README.md\" \"**/src/**/*.{js,jsx,ts,tsx,json}\"",
+    "storybook": "cd storybook && npm run storybook",
+    "build-storybook": "cd storybook && build-storybook -s public"
+  },
+  "devDependencies": {
+    "@chakra-ui/react": "^2.5.5",
+    "@code-shaper/nextjs": "^0.0.23",
+    "@code-shaper/plugin": "^0.0.23",
+    "@code-shaper/react": "^0.0.24",
+    "@code-shaper/shaper-utils": "^0.0.22",
+    "@code-shaper/typescript": "^0.0.23",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "framer-motion": "^10.12.2",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "turbo": "latest",
+    "@swc/core": "^1"
+
+  },
+  "overrides": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json}": "prettier --write"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "packageManager": "npm@8.4.0"
+}
