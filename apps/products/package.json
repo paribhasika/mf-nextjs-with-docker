@@ -19,7 +19,7 @@
     "@chakra-ui/theme-tools": "^2.0.16",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
-    "@module-federation/nextjs-mf": "^6.1.4",
+    "@module-federation/nextjs-mf": "^6.5.1",
     "framer-motion": "^10.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -6,7 +6,9 @@ module.exports = {
   reactStrictMode: true,
 
   experimental: {
-    esmExternals: false
+    esmExternals: false,
+    appDir: false,
+
   },
   compiler:{
     styledComponents: true

@@ -6,6 +6,7 @@ module.exports = {
   output: 'standalone',
   experimental: {
     esmExternals: false,
+    appDir: false,
     outputFileTracingRoot: path.join(__dirname, "../../"),
   },
   compiler:{
